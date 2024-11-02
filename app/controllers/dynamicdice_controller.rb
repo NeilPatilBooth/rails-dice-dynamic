@@ -8,6 +8,7 @@ class DynamicdiceController < ApplicationController
       die = rand(1..@sides)
   
       @rolls.push(die)
+    end
     render({ :template => "game_templates/roll_random"})
   end
 end
