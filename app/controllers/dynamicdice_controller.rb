@@ -5,7 +5,7 @@ class DynamicdiceController < ApplicationController
     @rolls = []
   
     @num_dice.times do
-      die = rand(1..6)
+      die = rand(1..@sides)
   
       @rolls.push(die)
     render({ :template => "game_templates/roll_random"})
